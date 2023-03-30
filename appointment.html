@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Appointment Web App</title>
+   <link rel="stylesheet" href="appointment.css">
+  </head>
+  <body>
+    <div id="container">
+      <h1>Appointment Web App</h1>
+      <form onsubmit="return addAppointment()">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="notes">Notes:</label>
+        <textarea id="notes" name="notes"></textarea>
+
+        <input type="submit" value="Add Appointment">
+      </form>
+
+      <table>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Phone</th>
+          <th>Date</th>
+          <th>Notes</th>
+        </tr>
+        <tr>
+          <td>John Doe</td>
+          <td>johndoe@example.com</td>
+          <td>555-1234</td>
+          <td>2023-04-15</td>
+          <td>Annual checkup</td>
+        </tr>
+        <tr>
+          <td>Jane Smith</td>
+          <td>janesmith@example.com</td>
+          <td>555-5678</td>
+          <td>2023-04-20</td>
