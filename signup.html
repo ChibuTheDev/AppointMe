@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sign Up</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="signup.css">
+  </head>
+  <body>
+    <h1>Sign Up</h1>
+    <form action="/signup" method="POST">
+      <div class="container">
+        <label for="name"><b>Name</b></label>
+        <input type="text" placeholder="Enter Name" name="name" required>
+
+        <label for="email"><b>Email</b></label>
+        <input type="email" placeholder="Enter Email" name="email" required>
+
+        <label for="phone"><b>Phone Number:</b></label>
+        <input type="tel" placeholder="Enter Phone Number" name="phone" required>
+
+        <label for="password-confirm"><b>Password</b></label>
+        <input type="password" placeholder="Password" name="password" required>
+
+        <button type="submit"><a href="appointment.html">Sign Up</a></button>
+      </div>
+    </form>
+  </body>
+</html>
