@@ -1,15 +1,18 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
   <head>
     <title>Sign Up</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="{% static 'signup.css' %}">
   </head>
   <body>
     <h1>Sign Up</h1>
-    <form action="/signup" method="POST">
+    <form action="/signup/" method="post">
+        {% csrf_token %}
       <div class="container">
+            <h5>{{error}}</h5>
         <label for="name"><b>Name</b></label>
         <input type="text" placeholder="Enter Name" name="name" required>
 
@@ -22,7 +25,7 @@
         <label for="password-confirm"><b>Password</b></label>
         <input type="password" placeholder="Password" name="password" required>
 
-        <button type="submit"><a href="appointment.html">Sign Up</a></button>
+        <button type="submit">Sign Up</button>
       </div>
     </form>
   </body>

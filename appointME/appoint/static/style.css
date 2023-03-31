@@ -181,7 +181,7 @@ a{
     grid-template-columns: 40% 60%;
     gap: 1.7rem;
     place-items: center;
-    margin-top: 2rem;
+    margin-top: 6rem;
 }
 
 .hero-section .hero-content h2{

@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me</title>
 
-    <link rel="stylesheet" href="contact.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{% static 'contact.css' %}">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
 
     <!--ICONS-->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
@@ -22,16 +23,16 @@
 
     <nav class="nav-container">
         <div>
-            <a href="index.html" class="logo">appoint <span>ME</span></a>
+            <a href="{% url 'home' %}" class="logo">appoint <span>ME</span></a>
         </div>
         <div class="others">
             <ul class="nav-items">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index.html">About</a></li>
+                <li><a href="{%url 'home'%}">Home</a></li>
+                <li><a href="{%url 'home'%}">About</a></li>
                 <li><a href="index.html">Faqs</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="{% url 'contact' %}">Contact</a></li>
             </ul>
-            <a href="signin.html" class="sign-in">SIGN IN</a>
+            <a href="{% url 'signin' %}" class="sign-in">SIGN IN</a>
         </div>
         
     </nav>
